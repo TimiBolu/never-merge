@@ -1,0 +1,143 @@
+:root {
+  color-scheme: light;
+  font-family: var(--font-text);
+  --font-text: "SF Pro Text", "SF Pro Display", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "SF Pro Display", "SF Pro Text", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --bg: #fbfbfa;
+  --panel: #ffffff;
+  --text: #1d1d1f;
+  --muted: #727272;
+  --line: #ececec;
+  --soft: #f3f3f3;
+  --mint: #d4f8e8;
+  --mint-hover: #c3f3dc;
+  --mint-strong: #1f7a57;
+  --ink: #111111;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-text);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+main {
+  width: min(760px, calc(100vw - 40px));
+  margin: 56px auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 650;
+  line-height: 1.16;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 1.42;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+}
+
+label {
+  margin-top: 16px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 136px;
+  padding: 14px 16px;
+  resize: vertical;
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+  outline: none;
+  background: #f7f7f7;
+  color: var(--text);
+  font: 450 15px/1.5 var(--font-text);
+}
+
+textarea:focus {
+  border-color: #b8e8d2;
+  box-shadow: 0 0 0 4px rgba(212, 248, 232, 0.8);
+}
+
+textarea::placeholder {
+  color: #9a9a9a;
+}
+
+.hint {
+  font-size: 13px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+button {
+  min-height: 42px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--mint);
+  color: var(--mint-strong);
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--mint-hover);
+}
+
+#status {
+  min-height: 20px;
+  color: var(--mint-strong);
+  font-size: 14px;
+}
